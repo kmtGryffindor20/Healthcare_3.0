@@ -51,11 +51,11 @@ export default function ChatScreen() {
     }
 
     return (
-        <div className="bg-gradient-to-r from-black to-blue-600 h-full py-28 items-center ">
-            <h1 className="text-white text-6xl font-extrabold text-center mt-10"
-            >Ask your Doctor!</h1>
+        <div className="items-center py-32">
+            <h1 className="text-white text-6xl font-extrabold text-center"
+            >Chat with your Doctor!</h1>
             <div className="flex justify-center items-center">
-                <div className="w-3/4 h-screen mt-10">
+                <div className="w-3/4 mt-10">
                     <div className="flex justify-center items-center">
                         <div className="w-full lg:w-1/2 h-1/2 bg-gray-300 rounded-2xl shadow-lg pt-8">
                             <div className="flex justify-start flex-col h-96 overflow-y-scroll ">
