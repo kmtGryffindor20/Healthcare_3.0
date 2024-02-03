@@ -5,9 +5,12 @@ import orthology from "../orthology.png";
 import cardio from "../cardio.png";
 import derma from "../derma.png";
 import fertility from "../fertility.png";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
     return (
+        <>
+        <Navbar change={true} />
         <div className="text-black flex flex-col justify-center">
             <EntryCarousal />
             <WhyChoose/>
@@ -18,5 +21,6 @@ export default function Home() {
                 <Card name={"Fertility"} image={fertility}/>
             </div>
         </div>
+        </>
     )
 }
