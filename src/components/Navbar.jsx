@@ -14,7 +14,7 @@ export default function Navbar() {
     },[])
     return (
         <ChakraProvider>
-        <div className={`fixed w-screen top-0 z-10 font-sans ${navColor?'bg-gradient-to-br from-black to-blue-900':''}`} style={{transition:'all 0.3s ease-in'}}>
+        <div className={`fixed w-screen top-0 z-10 font-sans ${navColor?'bg-gradient-to-br from-black to-blue-900':''}`}>
             <nav className="py-8 flex justify-between px-16 items-center">
                 <h3 className="text-blue-600 font-extrabold text-3xl">
                     HEALTH<span className={`font-bold ${navColor?'text-white':'text-white'}`}>CARE</span> <span className={`font-bold text-5xl ${navColor?'text-white':'text-white'}`}>3.0</span>
