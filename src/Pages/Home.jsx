@@ -25,7 +25,7 @@ export default function Home() {
                 <WhyChoose/>
             </div>
 
-            <div className="w-full flex justify-center mt-32" data-aos="fade-up" data-aos-once="true">
+            <div className="w-full flex justify-center mt-32 mb-12 sm:bm-32" data-aos="fade-up" data-aos-once="true">
                 <Card name={"Orthology"} image={orthology}/>
                 <Card name={"Cardiology"} image={cardio}/>
                 <Card name={"Dermatology"} image={derma}/>
