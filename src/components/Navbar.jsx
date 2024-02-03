@@ -1,7 +1,8 @@
+import { ChakraProvider } from '@chakra-ui/react'
 
 export default function Navbar() {
     return (
-        <>
+        <ChakraProvider>
         <div className="sticky top-0 z-10 font-sans opacity-90">
             <nav className="bg-white shadow-lg py-8 flex justify-between px-16 items-center">
                 <h3 className="text-blue-600 font-extrabold text-3xl">
@@ -12,6 +13,6 @@ export default function Navbar() {
                 </a>
             </nav>
         </div>
-        </>
+        </ChakraProvider>
     )
 }
