@@ -1,6 +1,10 @@
 import Card from "../components/Card";
 import EntryCarousal from "../components/EntryCarousal";
 import WhyChoose from "../components/WhyChoose";
+import orthology from "../orthology.png";
+import cardio from "../cardio.png";
+import derma from "../derma.png";
+import fertility from "../fertility.png";
 
 export default function Home() {
     return (
@@ -8,10 +12,10 @@ export default function Home() {
             <EntryCarousal />
             <WhyChoose/>
             <div className="w-full flex justify-center mt-32">
-                <Card name={"Orthology"}/>
-                <Card name={"Cardiology"}/>
-                <Card name={"Dermatology"}/>
-                <Card name={"Fertility"}/>
+                <Card name={"Orthology"} image={orthology}/>
+                <Card name={"Cardiology"} image={cardio}/>
+                <Card name={"Dermatology"} image={derma}/>
+                <Card name={"Fertility"} image={fertility}/>
             </div>
         </div>
     )
