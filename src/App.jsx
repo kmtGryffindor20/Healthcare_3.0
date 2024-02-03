@@ -5,6 +5,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter as Router , Routes , Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import Chat from './Pages/Chat'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/chat" element={<Chat/>}/>
         </Routes>
+        <Footer />
       </Router>
     </ChakraProvider>
     </>
