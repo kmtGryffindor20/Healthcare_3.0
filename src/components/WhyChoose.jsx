@@ -33,7 +33,11 @@ export default function WhyChoose() {
         <Heading size='md'> Lorem Ipsum</Heading>
         </CardHeader>
         <CardBody>
-        <Text>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam officia error beatae ullam cum ea placeat ducimus quo recusandae nemo. Non soluta vero aliquam fuga corporis molestiae ipsa obcaecati cumque.</Text>
+        <Text>Healthcare 3.0 is made to give
+confidence to the patient to openly talk
+about their diseases without knowing
+about it any other person
+</Text>
         </CardBody>
     </Card>
     <Card border='2px solid' borderColor='black.200' borderRight={0} borderLeft={0} shadow={0}>
@@ -42,7 +46,9 @@ export default function WhyChoose() {
         <Heading size='md'> Lorem Ipsum</Heading>
         </CardHeader>
         <CardBody>
-        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus autem velit ut, quia aliquid officia laudantium maxime voluptatibus nisi molestias? Numquam ullam blanditiis impedit non repellat sit consequatur distinctio!</Text>
+        <Text>Can order the medicine via healthcare
+3.0 and all the data will be stored on
+blockchain</Text>
         </CardBody>
     </Card>
     <Card border='2px solid' borderColor='black.200' borderRight={0} borderLeft={0} shadow={0}>
@@ -51,7 +57,11 @@ export default function WhyChoose() {
         <Heading size='md'> Lorem Impsum</Heading>
         </CardHeader>
         <CardBody>
-        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo neque cumque! Dolor labore nulla, eligendi, quis laboriosam hic nihil quaerat quidem, dolorem quasi itaque nostrum! Nulla dolor id doloribus..</Text>
+        <Text>Due to extreme security of blockchain
+this site can only be access via the
+private key , and there is no threat of
+leaking information of the user/patient
+</Text>
         </CardBody>
     </Card>
     <Card border='2px solid' borderColor='black.200' borderRight={0} borderLeft={0} shadow={0}>
@@ -60,7 +70,11 @@ export default function WhyChoose() {
         <Heading size='md'> Lorem Impsum</Heading>
         </CardHeader>
         <CardBody>
-        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo neque cumque! Dolor labore nulla, eligendi, quis laboriosam hic nihil quaerat quidem, dolorem quasi itaque nostrum! Nulla dolor id doloribus..</Text>
+        <Text>Interact doctor via chat,
+video call etc, and take
+your prescription from
+them
+</Text>
         </CardBody>
     </Card>
     
