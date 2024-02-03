@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 export default function Navbar() {
-    const [navColor, setNavColor] = useState(true);
+    const [navColor, setNavColor] = useState(false);
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
