@@ -17,6 +17,8 @@ export default function Navbar(props) {
     } catch (error) {
       setIsConnected(false);
     }
+    console.log(isConnected);
+    console.log(accountAddress);
   };
   const [navColor, setNavColor] = useState(false);
 
@@ -50,7 +52,7 @@ export default function Navbar(props) {
             </span>
           </h3>
           <button className="btn" onClick={connectWallet}>
-            Connect Wallet
+            {isConnected ? "Connected" : "Connect Wallet"}
           </button>
         </nav>
       </div>
