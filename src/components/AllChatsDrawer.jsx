@@ -40,7 +40,7 @@ export default function AllChatsDrawer(){
                 <DrawerHeader>All Conversations</DrawerHeader>
       
                 <DrawerBody padding={0}>
-                  <Conversation person='Doctor' message='So why the f*ck are you wasting my time you f*cking stupif donkey!' />
+                  <Conversation person='Doctor' message="Great. I'll provide you with the necessary instructions and information for the telemedicine appointment. Don't hesitate to reach out if you have any further questions or concerns." />
                 </DrawerBody>
       
                 <DrawerFooter>

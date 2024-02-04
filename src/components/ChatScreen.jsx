@@ -11,8 +11,50 @@ var myContract = new web3js.eth.Contract(healthABI, myContractAddress);
 
 export default function ChatScreen() {
     const [array, setArray] = useState([
+        {
+          "message": "Hello Doctor, I've been experiencing some discomfort lately and I'm concerned it might be related to a sexually transmitted infection.",
+          "color": "bg-green-600",
+          "by": "justify-end"
+        },
+        {
+          "message": "I understand your concerns. It's important to address these issues. Can you provide more details about your symptoms?",
+          "color": "bg-blue-600",
+          "by": "justify-start"
+        },
+        {
+          "message": "Well, I've noticed some itching and unusual discharge. I'm really worried and not sure what to do.",
+          "color": "bg-green-600",
+          "by": "justify-end"
+        },
+        {
+          "message": "I see. It's essential to get a proper diagnosis. I recommend scheduling an appointment for a thorough examination. We can discuss potential treatment options after that.",
+          "color": "bg-blue-600",
+          "by": "justify-start"
+        },
+        {
+          "message": "I'm hesitant to come in person. Is there any way to address this without a physical visit?",
+          "color": "bg-green-600",
+          "by": "justify-end"
+        },
+        {
+          "message": "While an in-person visit is preferred for accurate diagnosis, we can start with a telemedicine consultation. I'll guide you through the process and recommend necessary tests. It's crucial to address this issue promptly for your well-being.",
+          "color": "bg-blue-600",
+          "by": "justify-start"
+        },
+        {
+          "message": "Okay, let's proceed with the telemedicine consultation. I appreciate your help, Doctor.",
+          "color": "bg-green-600",
+          "by": "justify-end"
+        },
+        {
+          "message": "Great. I'll provide you with the necessary instructions and information for the telemedicine appointment. Don't hesitate to reach out if you have any further questions or concerns.",
+          "color": "bg-blue-600",
+          "by": "justify-start"
+        }
+      ]
+      
        
-    ])
+)
 
     useEffect(() => {
         Aos.init({duration: 800});
