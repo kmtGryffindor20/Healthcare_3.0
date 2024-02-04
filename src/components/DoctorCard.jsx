@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function DoctorCard(props) {
 
@@ -17,9 +18,9 @@ export default function DoctorCard(props) {
             <div className="w-1/4 flex flex-col items-center px-1 justify-center gap-[4px]">
                 <h2 className="text-gray-500">Consultation</h2>
                 <p>{props.price}</p>
-                <button className="btn h-1/3 w-full px-1 flex justify-center items-center">Book</button>
+                <Link to={"/chat"}><button className="btn h-[40px] w-full px-2 flex justify-center items-center">Chat</button></Link>
             </div>
-
+            
         </div>
     );
 }

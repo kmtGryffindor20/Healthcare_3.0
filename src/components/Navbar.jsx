@@ -1,5 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 export default function Navbar(props) {
   const [accountAddress, setAccountAddress] = useState("");
   const [isConnected, setIsConnected] = useState(false);
@@ -40,7 +41,7 @@ export default function Navbar(props) {
         } ${!props.change & "bg-gradient-to-r from-black to-blue-600"} `}
       >
         <nav className="py-8 flex justify-between px-16 items-center">
-          <h3 className="text-blue-600 font-extrabold text-3xl">
+          <Link to={"/"}><h3 className="text-blue-600 font-extrabold text-3xl">
             HEALTH<span className={`font-bold text-white`}>CARE</span>{" "}
             <span
               className={`font-bold text-5xl ${
@@ -50,6 +51,7 @@ export default function Navbar(props) {
               3.0
             </span>
           </h3>
+          </Link>
           <button className="btn" onClick={connectWallet}>
             Connect Wallet
           </button>
