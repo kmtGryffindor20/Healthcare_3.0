@@ -19,7 +19,7 @@ export default function Home() {
     return (
         <>
         <Navbar change={true} />
-        <div className="text-black flex flex-col justify-center">
+        <div className="text-black flex flex-col justify-center cursor-none">
             <EntryCarousal />
         
             <div data-aos="fade-up" data-aos-once="true">

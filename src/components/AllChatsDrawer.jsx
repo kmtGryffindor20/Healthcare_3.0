@@ -22,7 +22,7 @@ export default function AllChatsDrawer(){
       
         return (
           <>
-          <div className='absolute top-48 lg:top-52'>
+          <div className='absolute top-48 lg:top-52' id="drawer">
 
             <Button ref={btnRef} colorScheme='blue' onClick={onOpen}>
               Open All Chats

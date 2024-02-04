@@ -43,7 +43,7 @@ export default function Doctors() {
     return(
         <>
         <Navbar/>
-        <div className="bg-gradient-to-r from-black to-blue-600 h-screen pt-32 pb-4 px-5">
+        <div className="bg-gradient-to-r from-black to-blue-600 h-screen pt-32 pb-4 px-5 cursor-none">
             <div className="doctors-list h-full bg-white w-full rounded-lg flex">
                 <div className="department-section invisible w-0 sm:visible sm:w-1/3 md:w-1/4 flex flex-col items-end pt-5 px-1 gap-2">
                     <h1 className="font-bold mb-5">Departments</h1>

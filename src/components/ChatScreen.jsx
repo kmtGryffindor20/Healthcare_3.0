@@ -65,7 +65,7 @@ export default function ChatScreen() {
     }, [array])
 
     return (
-        <div className="items-center py-32 font-sans">
+        <div className="items-center py-32 font-sans cursor-none">
             <h1 className="text-white text-4xl lg:text-6xl font-extrabold text-center mb-8"
             >Chat with your Doctor!</h1>
             <div className="flex justify-center items-center">

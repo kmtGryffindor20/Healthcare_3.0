@@ -33,7 +33,7 @@ export default function Navbar(props) {
   return (
     <ChakraProvider>
       <div
-        className={`fixed w-screen top-0 z-10 font-sans ${
+        className={`cursor-none fixed w-screen top-0 z-10 font-sans ${
           navColor & props.change
             ? "bg-gradient-to-r from-black to-blue-900"
             : ""
