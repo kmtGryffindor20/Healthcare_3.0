@@ -1,9 +1,13 @@
 import Message from "./Message"
 import { useState, useEffect } from "react"
-import AllChatsDrawer from "./AllChatsDrawer"
-import send from "../send.png"
+import AllChatsDrawer from "./AllChatsDrawer";
+import send from "../send.png";
 import Aos from "aos";
-
+import Web3 from "web3";
+import { healthABI } from "../components/abi.js";
+const web3js = new Web3(window.ethereum);
+var myContractAddress = "0xD7ACd2a9FD159E69Bb102A1ca21C9a3e3A5F771B";
+var myContract = new web3js.eth.Contract(healthABI, myContractAddress);
 export default function ChatScreen() {
     const [array, setArray] = useState([
         {
@@ -27,11 +31,9 @@ export default function ChatScreen() {
             by: "justify-end"
         }
     ])
-
-    useEffect(() => {
-        Aos.init({duration: 800});
-    }, []);
-  
+        useEffect(() => {
+          Aos.init({ duration: 800 });
+        }, []);
     const messages = () => {
         return array.map((item) => {
             return <Message message={item.message} color={item.color} by={item.by} />
@@ -40,9 +42,9 @@ export default function ChatScreen() {
 
     const [message, setMessage] = useState('')
 
-    function handleMessageChange(e) {
-        setMessage(e.target.value)
-    }
+  function handleMessageChange(e) {
+    setMessage(e.target.value);
+  }
 
     function sendMessage(e) {
         e.preventDefault()
@@ -54,15 +56,9 @@ export default function ChatScreen() {
             by: "justify-start"
         })
         setArray(newArray)
+        
         setMessage('')
     }
-
-    useEffect(() => {
-        let screen = document.getElementById('screen')
-        screen.scrollTop = screen.scrollHeight
-        let chat = document.getElementById('chat')
-        chat.focus()
-    }, [array])
 
     return (
         <div className="items-center py-32 font-sans cursor-none">
