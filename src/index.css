@@ -7,3 +7,28 @@
       @apply bg-blue-600 text-white active:bg-blue-900 font-bold text-lg px-6 py-3 rounded-lg shadow hover:shadow-lg mr-1 mb-1 cursor-pointer border border-blue-600 hover:bg-white hover:text-blue-600;
   }
 }
+
+:root {
+  cursor: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: blue;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkblue;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: cyan;
+}
