@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Chat from "./Pages/Chat";
 import Footer from "./components/Footer";
+import AnimatedCursor from "./components/AnimatedCursor";
 
 function App() {
   const [haveMetamask, setHaveMetamask] = useState(true);
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
       <ChakraProvider>
+        <AnimatedCursor />
         <Router>
           <Routes>
             <Route path="/" element={<Home />} exact />
