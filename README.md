@@ -17,9 +17,8 @@ Due to security of ethereum and open code , people can trust us
 ![unnamed](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/5ae3245a-b8bd-416f-8f3c-b2b5e22f195a)
 
 ### Providing confidence to talk openly to patient
+![fe69d7ad-da0e-40f0-9140-d47ad04934ca](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/cd196c35-f76c-4e4a-a709-0aeeae8cfa4f)
 
-
-![ca10711b-65b6-46d4-b954-800be01bd819](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/55a6eceb-684d-4934-86a4-170dc696620f)
 #### Some glimpses
 ![ca10711b-65b6-46d4-b954-800be01bd819](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/6b2d0f8a-dc10-40e9-b458-ac10e40684fb)
 
