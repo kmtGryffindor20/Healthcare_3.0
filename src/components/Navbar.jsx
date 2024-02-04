@@ -20,9 +20,10 @@ export default function Navbar(props) {
   };
   const [navColor, setNavColor] = useState(false);
 
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         setNavColor(true);
       } else {
         setNavColor(false);
@@ -57,3 +58,4 @@ export default function Navbar(props) {
     </ChakraProvider>
   );
 }
+

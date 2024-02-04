@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import Chat from "./Pages/Chat";
 import Footer from "./components/Footer";
 import AnimatedCursor from "./components/AnimatedCursor";
+import Doctors from './Pages/Doctors'
 
 function App() {
   const [haveMetamask, setHaveMetamask] = useState(true);
@@ -30,10 +31,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} exact />
             <Route path="/chat" element={<Chat />} exact />
+               <Route path="/department" element={<Doctors/>} exact/>
           </Routes>
           <Footer />
         </Router>
       </ChakraProvider>
+
     </>
   );
 }
