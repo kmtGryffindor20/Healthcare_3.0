@@ -11,26 +11,7 @@ var myContract = new web3js.eth.Contract(healthABI, myContractAddress);
 
 export default function ChatScreen() {
     const [array, setArray] = useState([
-        {
-            message: "Hello Doctor",
-            color: "bg-blue-600",
-            by: "justify-start"
-        },
-        {
-            message: "How are you feeling?",
-            color: "bg-green-600",
-            by: "justify-end"
-        },
-        {
-            message: "I am feeling good",
-            color: "bg-blue-600",
-            by: "justify-start"
-        },
-        {
-            message: "So why the f*ck are you wasting my time you f*cking stupif donkey!",
-            color: "bg-green-600",
-            by: "justify-end"
-        }
+       
     ])
 
     useEffect(() => {
@@ -64,7 +45,7 @@ export default function ChatScreen() {
       myContract.methods
         .sendMessage("0xfC986a6A04D2Bd4bF87123e5d1F3bc91B84e5515", message)
         .send({
-          from: "0x90804f282DE56a1e5Fe5E722801Ad12b0fC9158B",
+          from: "0x5C3E220E257496212cAf4fC6CCfe394b5Ca92d8a",
         });
       setMessage("");
     }
