@@ -50,7 +50,7 @@ export default function Navbar(props) {
             </span>
           </h3>
           <button className="btn" onClick={connectWallet}>
-            Connect
+            Connect Wallet
           </button>
         </nav>
       </div>
