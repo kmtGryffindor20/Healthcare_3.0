@@ -6,6 +6,7 @@ import { BrowserRouter as Router , Routes , Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import Chat from './Pages/Chat'
 import Footer from './components/Footer'
+import Doctors from './Pages/Doctors'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} exact/>
           <Route path="/chat" element={<Chat/>} exact/>
+          <Route path="/department" element={<Doctors/>} exact/>
         </Routes>
         <Footer />
       </Router>
