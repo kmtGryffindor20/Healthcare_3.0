@@ -10,6 +10,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
+import BulletHeading from "../components/BulletHeading";
 
 export default function Home() {
     useEffect(() => {
@@ -24,7 +25,7 @@ export default function Home() {
             <div data-aos="fade-up" data-aos-once="true">
                 <WhyChoose/>
             </div>
-            <h1 className="font-bold text-5xl text-center" data-aos="fade-up" data-aos-once="true">Our Specialities</h1>
+            <BulletHeading title={"Specialities"} />
             <div className="w-full flex justify-center mt-16 mb-12 sm:bm-32" data-aos="fade-up" data-aos-once="true">
                 <Card name={"Orthology"} image={orthology}/>
                 <Card name={"Cardiology"} image={cardio}/>
