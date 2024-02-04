@@ -1,8 +1,28 @@
-# React + Vite
+## HealthCare3.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the blockchain based healthcare website Which helps the patient to take perscription from the doctor without disclosing their identity. 
+It counters the main problem of privacy and lack of security currently present in online doctor consultancy.
 
-Currently, two official plugins are available:
+## Our HealthCare3.0 provides following features
+### Appealing home page
+![d8182db0-bbc5-469d-acb6-03eba00a9912](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/55af3380-d5af-4adc-8bc8-3f79961b789f)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Interactive chat with doctor
+![0e78387d-5931-4ea1-a152-c4060e56280e](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/35874aed-fed5-4fa9-94b7-e69e5c02bcd1)
+
+### Can talk with any world class doctor
+![88e25824-b6e6-4076-9b85-aa3991b67507](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/fcbcc08a-236e-4c10-85b4-6edeabfe76b0)
+### safe from hackers and leaking of information
+Due to security of ethereum and open code , people can trust us
+![unnamed](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/5ae3245a-b8bd-416f-8f3c-b2b5e22f195a)
+
+### Providing confidence to talk openly to patient
+
+
+![ca10711b-65b6-46d4-b954-800be01bd819](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/55a6eceb-684d-4934-86a4-170dc696620f)
+#### Some glimpses
+![ca10711b-65b6-46d4-b954-800be01bd819](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/6b2d0f8a-dc10-40e9-b458-ac10e40684fb)
+
+![unnamed](https://github.com/kmtGryffindor20/Healthcare_3.0/assets/132554375/1abbe14a-fa41-4805-9901-79cd65f6f3c9)
+
+Made with love from FutureX
