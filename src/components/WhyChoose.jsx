@@ -30,7 +30,7 @@ export default function WhyChoose() {
     <Card border='2px solid' borderColor='black.200' borderRight={0} borderLeft={0} shadow={0}>
         <CardHeader>
         <img src={sthethoscope} alt="sthethoscope" className='w-[15%]'/>
-        <Heading size='md'> Lorem Ipsum</Heading>
+        <Heading size='md'>Extreme security of user's data</Heading>
         </CardHeader>
         <CardBody>
         <Text>Healthcare 3.0 is made to give
@@ -43,7 +43,7 @@ about it any other person
     <Card border='2px solid' borderColor='black.200' borderRight={0} borderLeft={0} shadow={0}>
         <CardHeader>
         <img src={cadusceus} alt="cadusceus" className='w-[15%]'/>
-        <Heading size='md'> Lorem Ipsum</Heading>
+        <Heading size='md'>Order Medicine</Heading>
         </CardHeader>
         <CardBody>
         <Text>Can order the medicine via healthcare
@@ -54,7 +54,7 @@ blockchain</Text>
     <Card border='2px solid' borderColor='black.200' borderRight={0} borderLeft={0} shadow={0}>
         <CardHeader>
         <img src={syringe} alt="syringe" className='w-[15%]'/>
-        <Heading size='md'> Lorem Impsum</Heading>
+        <Heading size='md'>Safe from Hackers</Heading>
         </CardHeader>
         <CardBody>
         <Text>Due to extreme security of blockchain
@@ -66,14 +66,14 @@ leaking information of the user/patient
     </Card>
     <Card border='2px solid' borderColor='black.200' borderRight={0} borderLeft={0} shadow={0}>
         <CardHeader>
-        <img src={syringe} alt="syringe" className='w-[15%]'/>
-        <Heading size='md'> Lorem Impsum</Heading>
+        <img src={sthethoscope} alt="syringe" className='w-[15%]'/>
+        <Heading size='md'>World class Doctor</Heading>
         </CardHeader>
         <CardBody>
         <Text>Interact doctor via chat,
-video call etc, and take
-your prescription from
-them
+        video call etc, and take
+        your prescription from
+        them
 </Text>
         </CardBody>
     </Card>
