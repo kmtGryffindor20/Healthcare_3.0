@@ -1,5 +1,6 @@
 import Message from "./Message"
 import { useState, useEffect } from "react"
+import AllChatsDrawer from "./AllChatsDrawer"
 export default function ChatScreen() {
     const [array, setArray] = useState([
         {
@@ -51,14 +52,15 @@ export default function ChatScreen() {
     }
 
     return (
-        <div className="items-center py-32">
-            <h1 className="text-white text-6xl font-extrabold text-center"
+        <div className="items-center py-32 font-sans">
+            <h1 className="text-white text-4xl lg:text-6xl font-extrabold text-center mb-8"
             >Chat with your Doctor!</h1>
             <div className="flex justify-center items-center">
+                <AllChatsDrawer />
                 <div className="w-3/4 mt-10">
                     <div className="flex justify-center items-center">
                         <div className="w-full lg:w-1/2 h-1/2 bg-gray-300 rounded-2xl shadow-lg pt-8">
-                            <div className="flex justify-start flex-col h-96 overflow-y-scroll ">
+                            <div className="flex justify-start flex-col h-96 overflow-y-scroll">
                                 {messages()}
                             </div>
                             <input onChange={handleMessageChange} value={message} type="text" placeholder="Enter your message" className="w-4/5 h-14 rounded-2xl border-2 border-blue-600 focus:outline-none px-5" />
