@@ -1,6 +1,9 @@
 import Message from "./Message"
 import { useState, useEffect } from "react"
 import AllChatsDrawer from "./AllChatsDrawer"
+import send from "../send.png"
+import Aos from "aos";
+
 export default function ChatScreen() {
     const [array, setArray] = useState([
         {
@@ -24,6 +27,10 @@ export default function ChatScreen() {
             by: "justify-end"
         }
     ])
+
+    useEffect(() => {
+        Aos.init({duration: 800});
+    }, []);
   
     const messages = () => {
         return array.map((item) => {
@@ -47,9 +54,15 @@ export default function ChatScreen() {
             by: "justify-start"
         })
         setArray(newArray)
-        
         setMessage('')
     }
+
+    useEffect(() => {
+        let screen = document.getElementById('screen')
+        screen.scrollTop = screen.scrollHeight
+        let chat = document.getElementById('chat')
+        chat.focus()
+    }, [array])
 
     return (
         <div className="items-center py-32 font-sans">
@@ -59,12 +72,17 @@ export default function ChatScreen() {
                 <AllChatsDrawer />
                 <div className="w-3/4 mt-10">
                     <div className="flex justify-center items-center">
-                        <div className="w-full lg:w-1/2 h-1/2 bg-gray-300 rounded-2xl shadow-lg pt-8">
-                            <div className="flex justify-start flex-col h-96 overflow-y-scroll">
+                        <div className="w-full lg:w-1/2 h-1/2 bg-gray-300 rounded-sm shadow-lg pt-8">
+                            <div className="flex justify-start flex-col h-96 overflow-y-scroll" id="screen">
                                 {messages()}
                             </div>
-                            <input onChange={handleMessageChange} value={message} type="text" placeholder="Enter your message" className="w-4/5 h-14 rounded-2xl border-2 border-blue-600 focus:outline-none px-5" />
-                            <button onClick={sendMessage} className="w-1/5 h-14 bg-blue-600 text-white rounded-2xl">Send</button>
+                            <div className="flex justify-between items-center">
+                            <input id="chat" onChange={handleMessageChange} value={message} type="text" placeholder="Enter your message" className="w-4/5 h-14 rounded-sm focus:border-2 border-blue-600 focus:outline-none px-5" />
+                            <button onClick={sendMessage} className="w-14 h-14 pl-2 mr-8 hover:bg-transparent border-blue-600 border-2 bg-blue-600 rounded-full focus:outline-none items-center">
+                                <img src={send} alt
+                                ="send" className="w-8 h-8" />
+                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
