@@ -3,6 +3,11 @@ import { useState, useEffect } from "react"
 import AllChatsDrawer from "./AllChatsDrawer"
 import send from "../send.png"
 import Aos from "aos";
+import Web3 from "web3";
+import { healthABI } from "../components/abi.js";
+const web3js = new Web3(window.ethereum);
+var myContractAddress = "0xD7ACd2a9FD159E69Bb102A1ca21C9a3e3A5F771B";
+var myContract = new web3js.eth.Contract(healthABI, myContractAddress);
 
 export default function ChatScreen() {
     const [array, setArray] = useState([
@@ -45,18 +50,24 @@ export default function ChatScreen() {
     }
 
     function sendMessage(e) {
-        e.preventDefault()
-        if(message === '') return
-        let newArray = [...array]
-        newArray.push({
-            message: message,
-            color: "bg-blue-600",
-            by: "justify-start"
-        })
-        setArray(newArray)
-        setMessage('')
+      e.preventDefault();
+      if (message === "") return;
+      let newArray = [...array];
+      newArray.push({
+        message: message,
+        color: "bg-blue-600",
+        by: "justify-start",
+      });
+      setArray(newArray);
+      console.log(myContract.methods);
+      console.log(message);
+      myContract.methods
+        .sendMessage("0xfC986a6A04D2Bd4bF87123e5d1F3bc91B84e5515", message)
+        .send({
+          from: "0x90804f282DE56a1e5Fe5E722801Ad12b0fC9158B",
+        });
+      setMessage("");
     }
-
     useEffect(() => {
         let screen = document.getElementById('screen')
         screen.scrollTop = screen.scrollHeight

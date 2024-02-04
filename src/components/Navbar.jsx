@@ -20,7 +20,6 @@ export default function Navbar(props) {
   };
   const [navColor, setNavColor] = useState(false);
 
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
@@ -51,11 +50,10 @@ export default function Navbar(props) {
             </span>
           </h3>
           <button className="btn" onClick={connectWallet}>
-            Connect Wallet
+            {isConnected ? "Connected" : "Connect Wallet"}
           </button>
         </nav>
       </div>
     </ChakraProvider>
   );
 }
-

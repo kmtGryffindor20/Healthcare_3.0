@@ -5,7 +5,7 @@ import { useLockBodyScroll } from "@uidotdev/usehooks";
 import { healthABI } from "../components/abi.js";
 const web3js = new Web3(window.ethereum);
 
-var myContractAddress = "0xd9145cce52d386f254917e481eb44e9943f39138";
+var myContractAddress = "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8";
 var myContract = new web3js.eth.Contract(healthABI, myContractAddress);
 export default function Chat() {
   useLockBodyScroll();
