@@ -19,7 +19,7 @@ export default function WhyChoose() {
 
                     <CardBody>
                             <Heading size='lg' fontWeight={'bold'} marginBottom={8}>Why Choose Us?</Heading>
-                            <a className='btn'>
+                            <a className='btn' href='https://anonyome.com/2021/11/what-is-web-3-0-and-what-does-it-mean-for-privacy/' rel="noreferrer" target="_blank">
                                 Learn More
                             </a>
                     </CardBody>
@@ -74,7 +74,7 @@ leaking information of the user/patient
         video call etc, and take
         your prescription from
         them
-</Text>
+        </Text>
         </CardBody>
     </Card>
     
