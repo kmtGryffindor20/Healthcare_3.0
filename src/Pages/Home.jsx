@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import BulletHeading from "../components/BulletHeading";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     useEffect(() => {

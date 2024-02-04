@@ -9,7 +9,7 @@ import { useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
+import { useSearchParams } from "react-router-dom";
 const data = [
     {name: "Shishir Kushwaha", experience: "10yrs", degree: "MBBS , MD", hospital: "Vedanta Hospital, Sector-34, New Delhi", price: "500" , image:"https://thispersondoesnotexist.com" , department: "Orthology"},
     {name: "Julie Bryant", experience: "5yrs", degree: "MBBS , MD", hospital: "Vedanta Hospital, Sector-34, New Delhi", price: "500" , image:"https://thispersondoesnotexist.com" , department: "Orthology"},
@@ -22,7 +22,8 @@ const data = [
 ]
 
 export default function Doctors() {
-    const [dept,setDept] = useState("Orthology");
+    const [searchParams] = useSearchParams();
+    const [dept,setDept] = useState(searchParams.get("q"));
     const [doctors,setDoctors] = useState(data.filter((doc) => doc.department === dept));
     
     function changeDept(department){
@@ -47,11 +48,11 @@ export default function Doctors() {
             <div className="doctors-list h-full bg-white w-full rounded-lg flex">
                 <div className="department-section invisible w-0 sm:visible sm:w-1/3 md:w-1/4 flex flex-col items-end pt-5 px-1 gap-2">
                     <h1 className="font-bold mb-5">Departments</h1>
-                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center cursor-pointer" onClick={()=>{changeDept("Orthology")}}><img src={orthology} className="h-4 rounded-lg"></img><p>Orthology</p></div>
-                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center cursor-pointer" onClick={()=>{changeDept("Cardiology")}}><img src={cardio} className="h-4 rounded-lg"></img><p>Cardiology</p></div>
-                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center cursor-pointer" onClick={()=>{changeDept("Fertility")}}><img src={fertility} className="h-4 rounded-lg"></img><p>Fertility IVF</p></div>
-                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center cursor-pointer" onClick={()=>{changeDept("Dermatology")}}><img src={derma} className="h-4 rounded-lg"></img><p>Dermatology</p></div>
-                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center cursor-pointer" onClick={()=>{changeDept("Others")}}><img src={syringe} className="h-4 rounded-lg"></img><p>Other Dept</p></div>
+                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center" onClick={()=>{changeDept("Orthology")}}><img src={orthology} className="h-4 rounded-lg"></img><p>Orthology</p></div>
+                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center" onClick={()=>{changeDept("Cardiology")}}><img src={cardio} className="h-4 rounded-lg"></img><p>Cardiology</p></div>
+                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center" onClick={()=>{changeDept("Fertility")}}><img src={fertility} className="h-4 rounded-lg"></img><p>Fertility IVF</p></div>
+                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center" onClick={()=>{changeDept("Dermatology")}}><img src={derma} className="h-4 rounded-lg"></img><p>Dermatology</p></div>
+                    <div className="hover:bg-gray-300 w-2/3 text-end py-0.5 px-2 rounded-full transition-all flex justify-evenly items-center" onClick={()=>{changeDept("Others")}}><img src={syringe} className="h-4 rounded-lg"></img><p>Other Dept</p></div>
 
                 </div>
                 <div className="doctor-section w-full flex flex-col items-center py-5 px-3">
